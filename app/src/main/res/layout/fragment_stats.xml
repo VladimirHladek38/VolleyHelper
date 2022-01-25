@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="Go Back"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/playerStats"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@color/lapis"
+            android:gravity="center"
+            android:text="Player Stats"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/team1Player1StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="edit this"
+            app:layout_constraintStart_toStartOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/playerStats" />
+
+        <Button
+            android:id="@+id/team2Player1StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/playerStats" />
+
+        <Button
+            android:id="@+id/team2Player2StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team2Player1StatsButton" />
+
+        <Button
+            android:id="@+id/team2Player3StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team2Player2StatsButton" />
+
+        <Button
+            android:id="@+id/team2Player4StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team2Player3StatsButton" />
+
+        <Button
+            android:id="@+id/team2Player5StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team2Player4StatsButton" />
+
+        <Button
+            android:id="@+id/team2Player6StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team2Player5StatsButton" />
+
+        <Button
+            android:id="@+id/team1Player2StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team1Player1StatsButton" />
+
+        <Button
+            android:id="@+id/team1Player3StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team1Player2StatsButton" />
+
+        <Button
+            android:id="@+id/team1Player4StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team1Player3StatsButton" />
+
+        <Button
+            android:id="@+id/team1Player5StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team1Player4StatsButton" />
+
+        <Button
+            android:id="@+id/team1Player6StatsButton"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/grey_box"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="@+id/playerStats"
+            app:layout_constraintTop_toBottomOf="@+id/team1Player5StatsButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

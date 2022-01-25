@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerStatsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/selectedPlayer"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/lapis_box"
+            android:gravity="center"
+            android:text="Player 1 Stats"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="Go Back"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/hitScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="3 Hits"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/selectedPlayer" />
+
+        <TextView
+            android:id="@+id/outScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="2 Outs"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/selectedPlayer" />
+
+        <TextView
+            android:id="@+id/serveErrorScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="1 Serve Error"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/outScore" />
+
+        <TextView
+            android:id="@+id/netErrorScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="edit this"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/serveErrorScore" />
+
+        <TextView
+            android:id="@+id/passErrorScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="edit this"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/netErrorScore" />
+
+        <TextView
+            android:id="@+id/aceScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="0 Aces"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/hitScore" />
+
+        <TextView
+            android:id="@+id/blockScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="0 Blocks"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/aceScore" />
+
+        <TextView
+            android:id="@+id/blockOutScore"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:text="4 Block outs"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/selectedPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/blockScore" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

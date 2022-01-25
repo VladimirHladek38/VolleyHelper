@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/scoreSeperator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="@+id/finalTeam1Score"
+            app:layout_constraintEnd_toStartOf="@+id/finalTeam2Score"
+            app:layout_constraintStart_toEndOf="@+id/finalTeam1Score"
+            app:layout_constraintTop_toTopOf="@+id/finalTeam1Score" />
+
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="Play Again"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/playerStatsButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="View Player Stats"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/finalTeam1Score" />
+
+        <Button
+            android:id="@+id/setLogButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="View Set Log"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerStatsButton" />
+
+        <TextView
+            android:id="@+id/winner"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/lapis_box"
+            android:gravity="center"
+            android:text="Team 1 Wins"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/finalTeam1Score"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="@+id/winner"
+            app:layout_constraintTop_toBottomOf="@+id/winner" />
+
+        <TextView
+            android:id="@+id/finalTeam2Score"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="@+id/winner"
+            app:layout_constraintTop_toBottomOf="@+id/winner" />
+
+        <TextView
+            android:id="@+id/mvp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center"
+            android:hapticFeedbackEnabled="true"
+            android:text="MVP: Player 1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
+            app:layout_constraintEnd_toEndOf="@+id/setLogButton"
+            app:layout_constraintStart_toStartOf="@+id/setLogButton"
+            app:layout_constraintTop_toBottomOf="@+id/setLogButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

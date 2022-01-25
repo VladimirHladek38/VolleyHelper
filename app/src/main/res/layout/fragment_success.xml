@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="Go back"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/playerScores"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/lapis_box"
+            android:gravity="center"
+            android:text="Who scored?"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/player1SuccessButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:text="Player1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/playerScores"
+            app:layout_constraintTop_toBottomOf="@+id/playerScores" />
+
+        <Button
+            android:id="@+id/player2SuccessButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:text="Player1"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/playerScores"
+            app:layout_constraintTop_toBottomOf="@+id/playerScores" />
+
+        <Button
+            android:id="@+id/player4SuccessButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:text="Player1"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/playerScores"
+            app:layout_constraintTop_toBottomOf="@+id/player2SuccessButton" />
+
+        <Button
+            android:id="@+id/player6SuccessButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:text="Player1"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/playerScores"
+            app:layout_constraintTop_toBottomOf="@+id/player4SuccessButton" />
+
+        <Button
+            android:id="@+id/player3SuccessButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:text="Player1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/playerScores"
+            app:layout_constraintTop_toBottomOf="@+id/player1SuccessButton" />
+
+        <Button
+            android:id="@+id/player5SuccessButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:text="Player1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/playerScores"
+            app:layout_constraintTop_toBottomOf="@+id/player3SuccessButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

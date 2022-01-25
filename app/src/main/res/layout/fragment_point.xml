@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="Go back"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/hitButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Hit"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/scoringTeam"
+            app:layout_constraintTop_toBottomOf="@+id/scoringTeam" />
+
+        <Button
+            android:id="@+id/aceButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Ace"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/scoringTeam"
+            app:layout_constraintTop_toBottomOf="@+id/hitButton" />
+
+        <Button
+            android:id="@+id/blockButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Block"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/aceButton"
+            app:layout_constraintTop_toBottomOf="@+id/aceButton" />
+
+        <Button
+            android:id="@+id/blockOutButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Block out"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/blockButton"
+            app:layout_constraintTop_toBottomOf="@+id/blockButton" />
+
+        <Button
+            android:id="@+id/outButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Out"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/scoringTeam"
+            app:layout_constraintTop_toBottomOf="@+id/scoringTeam" />
+
+        <Button
+            android:id="@+id/serveErrorButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Serve Error"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/outButton"
+            app:layout_constraintTop_toBottomOf="@+id/outButton" />
+
+        <Button
+            android:id="@+id/passErrorButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Pass Error"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/netErrorButton"
+            app:layout_constraintTop_toBottomOf="@+id/netErrorButton" />
+
+        <Button
+            android:id="@+id/netErrorButton"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_box"
+            android:text="Net Error"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/serveErrorButton"
+            app:layout_constraintTop_toBottomOf="@+id/serveErrorButton" />
+
+        <TextView
+            android:id="@+id/scoringTeam"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/lapis_box"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

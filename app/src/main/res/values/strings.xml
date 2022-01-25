@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VolleyHelper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eventLogTest">Player 1 hits \nPlayer 2 puts it out \nPlayer 3 aces it\nPlayer4 blocks\nHello World!\nHi Android studio</string>
+</resources>

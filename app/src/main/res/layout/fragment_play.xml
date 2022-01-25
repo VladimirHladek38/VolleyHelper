@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/team1Name"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/lapis_box"
+            android:gravity="center"
+            android:text="edit this"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/team2Name"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/lapis_box"
+            android:gravity="center"
+            android:text="edit this"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/finalTeam1Score"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="@+id/team1Name"
+            app:layout_constraintStart_toStartOf="@+id/team1Name"
+            app:layout_constraintTop_toBottomOf="@+id/team1Name" />
+
+        <TextView
+            android:id="@+id/finalTeam2Score"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/grey_box"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="@+id/team2Name"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/team2Name"
+            app:layout_constraintTop_toBottomOf="@+id/team2Name" />
+
+        <TextView
+            android:id="@+id/scoreSeperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="@+id/finalTeam1Score"
+            app:layout_constraintEnd_toStartOf="@+id/finalTeam2Score"
+            app:layout_constraintStart_toEndOf="@+id/finalTeam1Score"
+            app:layout_constraintTop_toTopOf="@+id/finalTeam1Score" />
+
+        <Button
+            android:id="@+id/team1ScoresButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="Team 1 scores"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/team2ScoresButton"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/lapis_box"
+            android:text="edit tehese two"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/eventLog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/grey_box_sharp"
+            android:gravity="center_horizontal"
+            android:text="@string/eventLogTest"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/team2ScoresButton"
+            app:layout_constraintEnd_toEndOf="@+id/finalTeam2Score"
+            app:layout_constraintStart_toStartOf="@+id/finalTeam1Score"
+            app:layout_constraintTop_toBottomOf="@+id/finalTeam2Score"
+            app:lineHeight="34dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
